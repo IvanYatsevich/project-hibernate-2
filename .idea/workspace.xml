@@ -10,49 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="140462b4-65e8-4ea2-9c64-05cd75d3b76c" name="Changes" comment="DB schema was created, DB was uploaded">
-      <change afterPath="$PROJECT_DIR$/src/main/com/movie/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/movie/Runner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/movie/dao/AbstractDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/movie/dao/ActorDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/movie/dao/AddressDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/movie/dao/CategoryDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/movie/dao/CityDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/movie/dao/CountryDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/movie/dao/CustomerDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/movie/dao/FilmDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/movie/dao/FilmTextDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/movie/dao/InventoryDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/movie/dao/LanguageDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/movie/dao/PaymentDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/movie/dao/RentalDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/movie/dao/StaffDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/movie/dao/StoreDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/movie/entity/Actor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/movie/entity/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/movie/entity/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/movie/entity/City.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/movie/entity/Country.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/movie/entity/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/movie/entity/Feature.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/movie/entity/Film.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/movie/entity/FilmText.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/movie/entity/Inventory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/movie/entity/Language.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/movie/entity/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/movie/entity/Rating.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/movie/entity/RatingConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/movie/entity/Rental.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/movie/entity/Staff.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/movie/entity/Store.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/movie/entity/YearAttributeConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/spy.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8ef03746-288a-4f7e-b3ca-8f525912d034.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8ef03746-288a-4f7e-b3ca-8f525912d034.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/movie/service/run.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -296,7 +255,7 @@
       <workItem from="1759957301496" duration="50000" />
       <workItem from="1759957450375" duration="18000" />
       <workItem from="1760198672719" duration="14000" />
-      <workItem from="1760955521186" duration="991000" />
+      <workItem from="1760955521186" duration="1327000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -322,7 +281,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758989089625</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="DB schema was created, DB was uploaded">
+      <option name="closed" value="true" />
+      <created>1760956733006</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1760956733006</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

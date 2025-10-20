@@ -1,0 +1,333 @@
+1759696233580|0|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/test||
+1759733453934|0|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/test||
+1759733454001|30|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|create table actor (actor_id smallint not null auto_increment, first_name varchar(255), last_name varchar(255), last_update datetime(6), primary key (actor_id)) engine=InnoDB|create table actor (actor_id smallint not null auto_increment, first_name varchar(255), last_name varchar(255), last_update datetime(6), primary key (actor_id)) engine=InnoDB
+1759733454033|31|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|create table address (address_id smallint not null auto_increment, address varchar(255), address2 varchar(255), district varchar(255), last_update datetime(6), phone varchar(255), postal_code varchar(255), city_id smallint, primary key (address_id)) engine=InnoDB|create table address (address_id smallint not null auto_increment, address varchar(255), address2 varchar(255), district varchar(255), last_update datetime(6), phone varchar(255), postal_code varchar(255), city_id smallint, primary key (address_id)) engine=InnoDB
+1759733454058|24|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|create table category (category_id tinyint not null auto_increment, last_update datetime(6), name varchar(255), primary key (category_id)) engine=InnoDB|create table category (category_id tinyint not null auto_increment, last_update datetime(6), name varchar(255), primary key (category_id)) engine=InnoDB
+1759733454088|29|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|create table city (city_id smallint not null auto_increment, city varchar(255), last_update datetime(6), country_id smallint, primary key (city_id)) engine=InnoDB|create table city (city_id smallint not null auto_increment, city varchar(255), last_update datetime(6), country_id smallint, primary key (city_id)) engine=InnoDB
+1759733454116|27|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|create table country (country_id smallint not null auto_increment, country varchar(255), last_update datetime(6), primary key (country_id)) engine=InnoDB|create table country (country_id smallint not null auto_increment, country varchar(255), last_update datetime(6), primary key (country_id)) engine=InnoDB
+1759733454144|27|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|create table customer (customer_id smallint not null auto_increment, create_date datetime(6), email varchar(255), first_name varchar(255), active BIT, last_name varchar(255), last_update datetime(6), address_id smallint, store_id tinyint, primary key (customer_id)) engine=InnoDB|create table customer (customer_id smallint not null auto_increment, create_date datetime(6), email varchar(255), first_name varchar(255), active BIT, last_name varchar(255), last_update datetime(6), address_id smallint, store_id tinyint, primary key (customer_id)) engine=InnoDB
+1759733454176|31|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|create table film (film_id smallint not null auto_increment, description text, last_update datetime(6), length smallint, rating varchar(255), rental_duration tinyint, rental_rate decimal(19,2), replacement_cost decimal(19,2), title varchar(255), release_year tinyblob, language_id tinyint, original_language_id tinyint, primary key (film_id)) engine=InnoDB|create table film (film_id smallint not null auto_increment, description text, last_update datetime(6), length smallint, rating varchar(255), rental_duration tinyint, rental_rate decimal(19,2), replacement_cost decimal(19,2), title varchar(255), release_year tinyblob, language_id tinyint, original_language_id tinyint, primary key (film_id)) engine=InnoDB
+1759733454203|26|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|create table inventory (inventory_id integer not null auto_increment, last_update datetime(6), film_id smallint, store_id tinyint, primary key (inventory_id)) engine=InnoDB|create table inventory (inventory_id integer not null auto_increment, last_update datetime(6), film_id smallint, store_id tinyint, primary key (inventory_id)) engine=InnoDB
+1759733454231|27|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|create table language (language_id tinyint not null auto_increment, last_update datetime(6), name char, primary key (language_id)) engine=InnoDB|create table language (language_id tinyint not null auto_increment, last_update datetime(6), name char, primary key (language_id)) engine=InnoDB
+1759733454258|27|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|create table payment (payment_id smallint not null auto_increment, amount decimal(19,2), last_update datetime(6), payment_date datetime(6), customer_id smallint, rental_id integer, staff_id tinyint, primary key (payment_id)) engine=InnoDB|create table payment (payment_id smallint not null auto_increment, amount decimal(19,2), last_update datetime(6), payment_date datetime(6), customer_id smallint, rental_id integer, staff_id tinyint, primary key (payment_id)) engine=InnoDB
+1759733454287|28|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|create table rental (rental_id integer not null auto_increment, last_update datetime(6), rental_date datetime(6), return_date datetime(6), customer_id smallint, inventory_id integer, staff_id tinyint, primary key (rental_id)) engine=InnoDB|create table rental (rental_id integer not null auto_increment, last_update datetime(6), rental_date datetime(6), return_date datetime(6), customer_id smallint, inventory_id integer, staff_id tinyint, primary key (rental_id)) engine=InnoDB
+1759733454318|30|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|create table staff (staff_id tinyint not null auto_increment, email varchar(255), first_name varchar(255), active BIT, last_name varchar(255), last_update datetime(6), password varchar(255), picture BLOB, username varchar(255), address_id smallint, store_id tinyint, primary key (staff_id)) engine=InnoDB|create table staff (staff_id tinyint not null auto_increment, email varchar(255), first_name varchar(255), active BIT, last_name varchar(255), last_update datetime(6), password varchar(255), picture BLOB, username varchar(255), address_id smallint, store_id tinyint, primary key (staff_id)) engine=InnoDB
+1759733454343|26|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|create table store (store_id tinyint not null auto_increment, last_update datetime(6), manager_staff_id tinyint, address_id smallint, primary key (store_id)) engine=InnoDB|create table store (store_id tinyint not null auto_increment, last_update datetime(6), manager_staff_id tinyint, address_id smallint, primary key (store_id)) engine=InnoDB
+1759733454384|25|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|create table film_actor (actor_id smallint not null, film_id smallint not null, primary key (actor_id, film_id)) engine=InnoDB|create table film_actor (actor_id smallint not null, film_id smallint not null, primary key (actor_id, film_id)) engine=InnoDB
+1759733454411|26|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|create table Film_specialFeatures (Film_film_id smallint not null, special_features varchar(255)) engine=InnoDB|create table Film_specialFeatures (Film_film_id smallint not null, special_features varchar(255)) engine=InnoDB
+1759733454437|25|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|create table film_text (film_id smallint not null, description text, title varchar(255), primary key (film_id)) engine=InnoDB|create table film_text (film_id smallint not null, description text, title varchar(255), primary key (film_id)) engine=InnoDB
+1759733454511|73|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|alter table address add constraint FKpo044ng5x4gynb291cv24vtea foreign key (city_id) references city (city_id)|alter table address add constraint FKpo044ng5x4gynb291cv24vtea foreign key (city_id) references city (city_id)
+1759733454582|72|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|alter table city add constraint FKrpd7j1p7yxr784adkx4pyepba foreign key (country_id) references country (country_id)|alter table city add constraint FKrpd7j1p7yxr784adkx4pyepba foreign key (country_id) references country (country_id)
+1759733454656|72|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|alter table customer add constraint FKglkhkmh2vyn790ijs6hiqqpi foreign key (address_id) references address (address_id)|alter table customer add constraint FKglkhkmh2vyn790ijs6hiqqpi foreign key (address_id) references address (address_id)
+1759733454735|79|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|alter table customer add constraint FK4b6xs77vaijup4s0q2s06mvdo foreign key (store_id) references store (store_id)|alter table customer add constraint FK4b6xs77vaijup4s0q2s06mvdo foreign key (store_id) references store (store_id)
+1759733454811|75|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|alter table film add constraint FK88s9635v5hddv7cwig75m3ne2 foreign key (language_id) references language (language_id)|alter table film add constraint FK88s9635v5hddv7cwig75m3ne2 foreign key (language_id) references language (language_id)
+1759733454968|157|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|alter table film add constraint FK2kqprbtkpsgi2voih48af3stt foreign key (original_language_id) references language (language_id)|alter table film add constraint FK2kqprbtkpsgi2voih48af3stt foreign key (original_language_id) references language (language_id)
+1759733455043|74|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|alter table inventory add constraint FK1w3jxdcj9er5qbnt5okl5quek foreign key (film_id) references film (film_id)|alter table inventory add constraint FK1w3jxdcj9er5qbnt5okl5quek foreign key (film_id) references film (film_id)
+1759733455118|74|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|alter table inventory add constraint FKtdgy352s88shlsdbhxqp5k9vk foreign key (store_id) references store (store_id)|alter table inventory add constraint FKtdgy352s88shlsdbhxqp5k9vk foreign key (store_id) references store (store_id)
+1759733455190|72|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|alter table payment add constraint FKby2skjf3ov608yb6nm16b49lg foreign key (customer_id) references customer (customer_id)|alter table payment add constraint FKby2skjf3ov608yb6nm16b49lg foreign key (customer_id) references customer (customer_id)
+1759733455265|74|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|alter table payment add constraint FK6ma2j46gjbggrp573uya2ub45 foreign key (rental_id) references rental (rental_id)|alter table payment add constraint FK6ma2j46gjbggrp573uya2ub45 foreign key (rental_id) references rental (rental_id)
+1759733455360|95|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|alter table payment add constraint FKr2ky59817r20r8fmb030pgw5p foreign key (staff_id) references staff (staff_id)|alter table payment add constraint FKr2ky59817r20r8fmb030pgw5p foreign key (staff_id) references staff (staff_id)
+1759733455428|68|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|alter table rental add constraint FK7jf1f7b8w6jotl5qw1kxn8114 foreign key (customer_id) references customer (customer_id)|alter table rental add constraint FK7jf1f7b8w6jotl5qw1kxn8114 foreign key (customer_id) references customer (customer_id)
+1759733455506|77|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|alter table rental add constraint FKha0q4deoej14ctjwlnwghdoi9 foreign key (inventory_id) references inventory (inventory_id)|alter table rental add constraint FKha0q4deoej14ctjwlnwghdoi9 foreign key (inventory_id) references inventory (inventory_id)
+1759733455592|84|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|alter table rental add constraint FKg5xhr8he6bf3o2e4gl4fawwr2 foreign key (staff_id) references staff (staff_id)|alter table rental add constraint FKg5xhr8he6bf3o2e4gl4fawwr2 foreign key (staff_id) references staff (staff_id)
+1759733455659|67|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|alter table staff add constraint FKp2ddaj8266482gxwjs2dnblaa foreign key (address_id) references address (address_id)|alter table staff add constraint FKp2ddaj8266482gxwjs2dnblaa foreign key (address_id) references address (address_id)
+1759733455737|77|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|alter table staff add constraint FKavq26dlb2g739y5q453aod7nq foreign key (store_id) references store (store_id)|alter table staff add constraint FKavq26dlb2g739y5q453aod7nq foreign key (store_id) references store (store_id)
+1759733455807|70|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|alter table store add constraint FK93odd5qbxdchjmaj7qa84k8xp foreign key (manager_staff_id) references staff (staff_id)|alter table store add constraint FK93odd5qbxdchjmaj7qa84k8xp foreign key (manager_staff_id) references staff (staff_id)
+1759733455883|75|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|alter table store add constraint FKp2sen6ouwnlht537csk0kip90 foreign key (address_id) references address (address_id)|alter table store add constraint FKp2sen6ouwnlht537csk0kip90 foreign key (address_id) references address (address_id)
+1759733455954|70|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|alter table film_actor add constraint FK44uk58x166xx1qd03300206nr foreign key (film_id) references film (film_id)|alter table film_actor add constraint FK44uk58x166xx1qd03300206nr foreign key (film_id) references film (film_id)
+1759733456023|69|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|alter table film_actor add constraint FKsr7lo9p4intei645cws4f9t4l foreign key (actor_id) references actor (actor_id)|alter table film_actor add constraint FKsr7lo9p4intei645cws4f9t4l foreign key (actor_id) references actor (actor_id)
+1759733456088|64|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|alter table Film_specialFeatures add constraint FK52hygpcomtsbvqf5glgyl9g2c foreign key (Film_film_id) references film (film_id)|alter table Film_specialFeatures add constraint FK52hygpcomtsbvqf5glgyl9g2c foreign key (Film_film_id) references film (film_id)
+1759733479176|0|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/test||
+1759733479256|3|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`city` where 1=0|select * from `test`.`city` where 1=0
+1759733479269|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`country` where 1=0|select * from `test`.`country` where 1=0
+1759733479279|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759733479283|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759733479293|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`language` where 1=0|select * from `test`.`language` where 1=0
+1759733479296|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`language` where 1=0|select * from `test`.`language` where 1=0
+1759733479307|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759733479310|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759733479319|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`customer` where 1=0|select * from `test`.`customer` where 1=0
+1759733479324|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`rental` where 1=0|select * from `test`.`rental` where 1=0
+1759733479327|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759733479336|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`customer` where 1=0|select * from `test`.`customer` where 1=0
+1759733479340|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`inventory` where 1=0|select * from `test`.`inventory` where 1=0
+1759733479342|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759733479351|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759733479354|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759733479362|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759733479365|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759733479374|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`actor` where 1=0|select * from `test`.`actor` where 1=0
+1759733479377|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759733479386|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759733670625|0|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/test||
+1759733670698|3|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`city` where 1=0|select * from `test`.`city` where 1=0
+1759733670710|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`country` where 1=0|select * from `test`.`country` where 1=0
+1759733670720|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759733670722|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759733670732|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`language` where 1=0|select * from `test`.`language` where 1=0
+1759733670735|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`language` where 1=0|select * from `test`.`language` where 1=0
+1759733670744|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759733670750|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759733670759|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`customer` where 1=0|select * from `test`.`customer` where 1=0
+1759733670761|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`rental` where 1=0|select * from `test`.`rental` where 1=0
+1759733670764|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759733670772|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`customer` where 1=0|select * from `test`.`customer` where 1=0
+1759733670774|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`inventory` where 1=0|select * from `test`.`inventory` where 1=0
+1759733670777|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759733670785|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759733670788|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759733670796|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759733670798|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759733670806|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`actor` where 1=0|select * from `test`.`actor` where 1=0
+1759733670809|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759733670817|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759733799375|0|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/test||
+1759733799450|2|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`city` where 1=0|select * from `test`.`city` where 1=0
+1759733799462|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`country` where 1=0|select * from `test`.`country` where 1=0
+1759733799472|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759733799474|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759733799485|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`language` where 1=0|select * from `test`.`language` where 1=0
+1759733799487|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`language` where 1=0|select * from `test`.`language` where 1=0
+1759733799496|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759733799499|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759733799509|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`customer` where 1=0|select * from `test`.`customer` where 1=0
+1759733799512|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`rental` where 1=0|select * from `test`.`rental` where 1=0
+1759733799514|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759733799522|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`customer` where 1=0|select * from `test`.`customer` where 1=0
+1759733799525|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`inventory` where 1=0|select * from `test`.`inventory` where 1=0
+1759733799528|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759733799537|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759733799540|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759733799548|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759733799550|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759733799559|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`actor` where 1=0|select * from `test`.`actor` where 1=0
+1759733799562|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759733799570|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759733799729|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select store0_.store_id as store_id1_12_, store0_.manager_staff_id as manager_3_12_, store0_.address_id as address_4_12_, store0_.last_update as last_upd2_12_ from store store0_ limit ?|select store0_.store_id as store_id1_12_, store0_.manager_staff_id as manager_3_12_, store0_.address_id as address_4_12_, store0_.last_update as last_upd2_12_ from store store0_ limit 1
+1759734114010|0|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/test||
+1759734114082|3|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`city` where 1=0|select * from `test`.`city` where 1=0
+1759734114094|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`country` where 1=0|select * from `test`.`country` where 1=0
+1759734114103|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759734114106|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759734114114|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`language` where 1=0|select * from `test`.`language` where 1=0
+1759734114117|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`language` where 1=0|select * from `test`.`language` where 1=0
+1759734114127|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759734114130|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759734114138|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`customer` where 1=0|select * from `test`.`customer` where 1=0
+1759734114141|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`rental` where 1=0|select * from `test`.`rental` where 1=0
+1759734114143|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759734114152|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`customer` where 1=0|select * from `test`.`customer` where 1=0
+1759734114154|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`inventory` where 1=0|select * from `test`.`inventory` where 1=0
+1759734114157|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759734114165|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759734114167|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759734114175|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759734114177|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759734114186|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`actor` where 1=0|select * from `test`.`actor` where 1=0
+1759734114188|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759734114197|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759734114407|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select store0_.store_id as store_id1_12_, store0_.manager_staff_id as manager_3_12_, store0_.address_id as address_4_12_, store0_.last_update as last_upd2_12_ from store store0_ limit ?|select store0_.store_id as store_id1_12_, store0_.manager_staff_id as manager_3_12_, store0_.address_id as address_4_12_, store0_.last_update as last_upd2_12_ from store store0_ limit 1
+1759734127567|0|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/test||
+1759734127645|2|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`city` where 1=0|select * from `test`.`city` where 1=0
+1759734127658|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`country` where 1=0|select * from `test`.`country` where 1=0
+1759734127668|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759734127671|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759734127680|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`language` where 1=0|select * from `test`.`language` where 1=0
+1759734127683|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`language` where 1=0|select * from `test`.`language` where 1=0
+1759734127692|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759734127695|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759734127703|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`customer` where 1=0|select * from `test`.`customer` where 1=0
+1759734127706|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`rental` where 1=0|select * from `test`.`rental` where 1=0
+1759734127708|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759734127717|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`customer` where 1=0|select * from `test`.`customer` where 1=0
+1759734127719|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`inventory` where 1=0|select * from `test`.`inventory` where 1=0
+1759734127722|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759734127731|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759734127733|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759734127742|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759734127744|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759734127753|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`actor` where 1=0|select * from `test`.`actor` where 1=0
+1759734127755|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759734127764|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759734309230|65|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select store0_.store_id as store_id1_12_, store0_.manager_staff_id as manager_3_12_, store0_.address_id as address_4_12_, store0_.last_update as last_upd2_12_ from store store0_ limit ?|select store0_.store_id as store_id1_12_, store0_.manager_staff_id as manager_3_12_, store0_.address_id as address_4_12_, store0_.last_update as last_upd2_12_ from store store0_ limit 1
+1759734343294|0|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/test||
+1759734343374|10|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`city` where 1=0|select * from `test`.`city` where 1=0
+1759734343386|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`country` where 1=0|select * from `test`.`country` where 1=0
+1759734343395|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759734343397|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759734343408|3|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`language` where 1=0|select * from `test`.`language` where 1=0
+1759734343410|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`language` where 1=0|select * from `test`.`language` where 1=0
+1759734343418|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759734343421|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759734343428|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`customer` where 1=0|select * from `test`.`customer` where 1=0
+1759734343431|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`rental` where 1=0|select * from `test`.`rental` where 1=0
+1759734343433|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759734343441|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`customer` where 1=0|select * from `test`.`customer` where 1=0
+1759734343443|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`inventory` where 1=0|select * from `test`.`inventory` where 1=0
+1759734343446|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759734343452|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759734343455|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759734343462|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759734343465|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759734343473|2|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`actor` where 1=0|select * from `test`.`actor` where 1=0
+1759734343476|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759734343483|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759734343608|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select store0_.store_id as store_id1_12_, store0_.manager_staff_id as manager_3_12_, store0_.address_id as address_4_12_, store0_.last_update as last_upd2_12_ from store store0_ limit ?|select store0_.store_id as store_id1_12_, store0_.manager_staff_id as manager_3_12_, store0_.address_id as address_4_12_, store0_.last_update as last_upd2_12_ from store store0_ limit 1
+1759734717106|0|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/test||
+1759734717178|2|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`city` where 1=0|select * from `test`.`city` where 1=0
+1759734717188|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`country` where 1=0|select * from `test`.`country` where 1=0
+1759734717197|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759734717199|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759734717207|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`language` where 1=0|select * from `test`.`language` where 1=0
+1759734717210|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`language` where 1=0|select * from `test`.`language` where 1=0
+1759734717217|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759734717220|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759734717228|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`customer` where 1=0|select * from `test`.`customer` where 1=0
+1759734717232|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`rental` where 1=0|select * from `test`.`rental` where 1=0
+1759734717234|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759734717241|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`customer` where 1=0|select * from `test`.`customer` where 1=0
+1759734717243|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`inventory` where 1=0|select * from `test`.`inventory` where 1=0
+1759734717246|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759734717253|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759734717255|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759734717263|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759734717265|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759734717272|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`actor` where 1=0|select * from `test`.`actor` where 1=0
+1759734717275|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759734717284|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759734717422|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select store0_.store_id as store_id1_12_, store0_.manager_staff_id as manager_3_12_, store0_.address_id as address_4_12_, store0_.last_update as last_upd2_12_ from store store0_ limit ?|select store0_.store_id as store_id1_12_, store0_.manager_staff_id as manager_3_12_, store0_.address_id as address_4_12_, store0_.last_update as last_upd2_12_ from store store0_ limit 1
+1759755274278|1|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/test||
+1759755274364|11|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`city` where 1=0|select * from `test`.`city` where 1=0
+1759755274378|2|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`country` where 1=0|select * from `test`.`country` where 1=0
+1759755274389|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759755274393|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759755274405|2|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`language` where 1=0|select * from `test`.`language` where 1=0
+1759755274408|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`language` where 1=0|select * from `test`.`language` where 1=0
+1759755274417|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759755274420|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759755274429|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`customer` where 1=0|select * from `test`.`customer` where 1=0
+1759755274432|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`rental` where 1=0|select * from `test`.`rental` where 1=0
+1759755274436|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759755274444|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`customer` where 1=0|select * from `test`.`customer` where 1=0
+1759755274447|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`inventory` where 1=0|select * from `test`.`inventory` where 1=0
+1759755274451|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759755274460|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759755274462|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759755274470|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759755274473|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759755274481|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`actor` where 1=0|select * from `test`.`actor` where 1=0
+1759755274485|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759755274492|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759755381161|0|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/test||
+1759755381237|3|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`city` where 1=0|select * from `test`.`city` where 1=0
+1759755381250|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`country` where 1=0|select * from `test`.`country` where 1=0
+1759755381259|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759755381262|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759755381272|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`language` where 1=0|select * from `test`.`language` where 1=0
+1759755381275|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`language` where 1=0|select * from `test`.`language` where 1=0
+1759755381285|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759755381288|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759755381296|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`customer` where 1=0|select * from `test`.`customer` where 1=0
+1759755381300|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`rental` where 1=0|select * from `test`.`rental` where 1=0
+1759755381304|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759755381312|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`customer` where 1=0|select * from `test`.`customer` where 1=0
+1759755381315|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`inventory` where 1=0|select * from `test`.`inventory` where 1=0
+1759755381318|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759755381327|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759755381330|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759755381338|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759755381341|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759755381349|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`actor` where 1=0|select * from `test`.`actor` where 1=0
+1759755381351|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759755381359|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759755417591|0|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/test||
+1759755417670|3|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`city` where 1=0|select * from `test`.`city` where 1=0
+1759755417682|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`country` where 1=0|select * from `test`.`country` where 1=0
+1759755417693|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759755417696|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759755417705|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`language` where 1=0|select * from `test`.`language` where 1=0
+1759755417708|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`language` where 1=0|select * from `test`.`language` where 1=0
+1759755417717|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759755417721|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759755417729|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`customer` where 1=0|select * from `test`.`customer` where 1=0
+1759755417732|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`rental` where 1=0|select * from `test`.`rental` where 1=0
+1759755417736|2|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759755417744|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`customer` where 1=0|select * from `test`.`customer` where 1=0
+1759755417747|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`inventory` where 1=0|select * from `test`.`inventory` where 1=0
+1759755417750|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759755417758|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759755417761|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759755417769|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759755417772|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759755417779|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`actor` where 1=0|select * from `test`.`actor` where 1=0
+1759755417782|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759755417789|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759755723355|0|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/test||
+1759755723429|2|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`city` where 1=0|select * from `test`.`city` where 1=0
+1759755723440|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`country` where 1=0|select * from `test`.`country` where 1=0
+1759755723450|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759755723453|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759755723461|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`language` where 1=0|select * from `test`.`language` where 1=0
+1759755723464|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`language` where 1=0|select * from `test`.`language` where 1=0
+1759755723471|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759755723474|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759755723482|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`customer` where 1=0|select * from `test`.`customer` where 1=0
+1759755723486|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`rental` where 1=0|select * from `test`.`rental` where 1=0
+1759755723490|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759755723498|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`customer` where 1=0|select * from `test`.`customer` where 1=0
+1759755723501|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`inventory` where 1=0|select * from `test`.`inventory` where 1=0
+1759755723504|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759755723513|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759755723515|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759755723523|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759755723525|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759755723533|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`actor` where 1=0|select * from `test`.`actor` where 1=0
+1759755723536|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759755723543|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759755723701|11|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select store0_.store_id as store_id1_12_, store0_.manager_staff_id as manager_3_12_, store0_.address_id as address_4_12_, store0_.last_update as last_upd2_12_ from store store0_ limit ?|select store0_.store_id as store_id1_12_, store0_.manager_staff_id as manager_3_12_, store0_.address_id as address_4_12_, store0_.last_update as last_upd2_12_ from store store0_ limit 1
+1759755874092|0|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/test||
+1759755874168|3|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`city` where 1=0|select * from `test`.`city` where 1=0
+1759755874180|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`country` where 1=0|select * from `test`.`country` where 1=0
+1759755874190|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759755874192|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759755874202|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`language` where 1=0|select * from `test`.`language` where 1=0
+1759755874204|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`language` where 1=0|select * from `test`.`language` where 1=0
+1759755874214|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759755874217|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759755874224|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`customer` where 1=0|select * from `test`.`customer` where 1=0
+1759755874227|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`rental` where 1=0|select * from `test`.`rental` where 1=0
+1759755874230|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759755874237|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`customer` where 1=0|select * from `test`.`customer` where 1=0
+1759755874240|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`inventory` where 1=0|select * from `test`.`inventory` where 1=0
+1759755874244|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759755874251|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759755874254|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759755874261|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759755874263|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759755874271|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`actor` where 1=0|select * from `test`.`actor` where 1=0
+1759755874274|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759755874282|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759755874444|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select store0_.store_id as store_id1_12_, store0_.manager_staff_id as manager_3_12_, store0_.address_id as address_4_12_, store0_.last_update as last_upd2_12_ from store store0_ limit ?|select store0_.store_id as store_id1_12_, store0_.manager_staff_id as manager_3_12_, store0_.address_id as address_4_12_, store0_.last_update as last_upd2_12_ from store store0_ limit 1
+1759756133674|0|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/test||
+1759756133747|3|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`city` where 1=0|select * from `test`.`city` where 1=0
+1759756133758|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`country` where 1=0|select * from `test`.`country` where 1=0
+1759756133767|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759756133770|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759756133779|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`language` where 1=0|select * from `test`.`language` where 1=0
+1759756133782|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`language` where 1=0|select * from `test`.`language` where 1=0
+1759756133791|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759756133795|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759756133803|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`customer` where 1=0|select * from `test`.`customer` where 1=0
+1759756133806|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`rental` where 1=0|select * from `test`.`rental` where 1=0
+1759756133809|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759756133817|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`customer` where 1=0|select * from `test`.`customer` where 1=0
+1759756133820|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`inventory` where 1=0|select * from `test`.`inventory` where 1=0
+1759756133822|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759756133831|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759756133835|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`store` where 1=0|select * from `test`.`store` where 1=0
+1759756133842|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`address` where 1=0|select * from `test`.`address` where 1=0
+1759756133845|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`staff` where 1=0|select * from `test`.`staff` where 1=0
+1759756133853|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`actor` where 1=0|select * from `test`.`actor` where 1=0
+1759756133855|0|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759756133864|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select * from `test`.`film` where 1=0|select * from `test`.`film` where 1=0
+1759756134025|1|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/test|select store0_.store_id as store_id1_12_, store0_.manager_staff_id as manager_3_12_, store0_.address_id as address_4_12_, store0_.last_update as last_upd2_12_ from store store0_ limit ?|select store0_.store_id as store_id1_12_, store0_.manager_staff_id as manager_3_12_, store0_.address_id as address_4_12_, store0_.last_update as last_upd2_12_ from store store0_ limit 1
