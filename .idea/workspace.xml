@@ -1,13 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="project-hibernate-2:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="140462b4-65e8-4ea2-9c64-05cd75d3b76c" name="Changes" comment="init commit">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="140462b4-65e8-4ea2-9c64-05cd75d3b76c" name="Changes" comment="DB schema was created, DB was uploaded">
+      <change afterPath="$PROJECT_DIR$/src/main/com/movie/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/movie/Runner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/movie/dao/AbstractDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/movie/dao/ActorDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/movie/dao/AddressDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/movie/dao/CategoryDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/movie/dao/CityDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/movie/dao/CountryDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/movie/dao/CustomerDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/movie/dao/FilmDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/movie/dao/FilmTextDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/movie/dao/InventoryDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/movie/dao/LanguageDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/movie/dao/PaymentDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/movie/dao/RentalDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/movie/dao/StaffDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/movie/dao/StoreDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/movie/entity/Actor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/movie/entity/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/movie/entity/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/movie/entity/City.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/movie/entity/Country.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/movie/entity/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/movie/entity/Feature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/movie/entity/Film.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/movie/entity/FilmText.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/movie/entity/Inventory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/movie/entity/Language.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/movie/entity/Payment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/movie/entity/Rating.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/movie/entity/RatingConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/movie/entity/Rental.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/movie/entity/Staff.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/movie/entity/Store.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/movie/entity/YearAttributeConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/spy.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8ef03746-288a-4f7e-b3ca-8f525912d034.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8ef03746-288a-4f7e-b3ca-8f525912d034.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -15,6 +58,14 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -24,58 +75,194 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;IvanYatsevich&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/IvanYatsevich/project-hibernate-2.git&quot;,
+    &quot;accountId&quot;: &quot;fe4d8c01-195c-4f13-a5f2-8fe48ea35ebf&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="33HsWDwE0w9OyXYwVGofDIFI1eZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Database Script.dump-hibernate-2.sql.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/user/IdeaProjects/project-hibernate-2",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Runner.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.dump-hibernate-2.sql.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Tomcat Server.Tomcat 10.1.42.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/IdeaProjects/project-hibernate-2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15527344&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ],
-    "RunConfigurationTargetLRU": [
-      "8ef03746-288a-4f7e-b3ca-8f525912d034/schema/\"movie\""
+    &quot;RunConfigurationTargetLRU&quot;: [
+      &quot;8ef03746-288a-4f7e-b3ca-8f525912d034/schema/\&quot;movie\&quot;&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="main.com.movie.entity" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\IdeaProjects\project-hibernate-2\src\main\com\movie\ebtity" />
       <recent name="C:\Users\user\IdeaProjects\project-hibernate-2\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Runner">
+    <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.com.movie.Runner" />
+      <module name="project-hibernate-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.com.movie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="dump-hibernate-2.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/src/main/resources/dump-hibernate-2.sql" />
       <script-mode>FILE</script-mode>
       <data-source id="8ef03746-288a-4f7e-b3ca-8f525912d034" namespace="schema/&quot;movie&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Tomcat 10.1.42" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.42" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="project-hibernate-2:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="37b976df-b0f1-48a0-8279-ecae16bd49dd" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="55007" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="project-hibernate-2:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Runner" />
+      <item itemvalue="Database Script.dump-hibernate-2.sql" />
+      <item itemvalue="Tomcat Server.Tomcat 10.1.42" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Runner" />
         <item itemvalue="Database Script.dump-hibernate-2.sql" />
       </list>
     </recent_temporary>
@@ -96,7 +283,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1758985361499</updated>
-      <workItem from="1758985362728" duration="1509000" />
+      <workItem from="1758985362728" duration="10161000" />
+      <workItem from="1759064665096" duration="7580000" />
+      <workItem from="1759074754848" duration="8881000" />
+      <workItem from="1759090633313" duration="3840000" />
+      <workItem from="1759170654607" duration="9766000" />
+      <workItem from="1759324153258" duration="1468000" />
+      <workItem from="1759345470357" duration="897000" />
+      <workItem from="1759420393694" duration="7541000" />
+      <workItem from="1759655900521" duration="24384000" />
+      <workItem from="1759855714752" duration="14000" />
+      <workItem from="1759957301496" duration="50000" />
+      <workItem from="1759957450375" duration="18000" />
+      <workItem from="1760198672719" duration="14000" />
+      <workItem from="1760955521186" duration="991000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -114,7 +314,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758985673943</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="DB schema was created, DB was uploaded">
+      <option name="closed" value="true" />
+      <created>1758989089625</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1758989089625</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,6 +341,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
+    <MESSAGE value="DB schema was created, DB was uploaded" />
+    <option name="LAST_COMMIT_MESSAGE" value="DB schema was created, DB was uploaded" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
